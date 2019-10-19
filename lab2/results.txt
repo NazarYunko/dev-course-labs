@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.15+, pytest-4.6.6, py-1.8.0, pluggy-0.13.0
+rootdir: /home/nyunko/Desktop/dev-course-labs/lab2
+collected 4 items
+
+tests.py ....                                                            [100%]
+
+=========================== 4 passed in 0.63 seconds ===========================
+========================================
+Результат без параметрів: 
+No URL passed to function
+========================================
+Результат з правильною URL: 
+('Time is: ', u'04:11:50 PM')
+('Date is: ', u'10-19-2019')
