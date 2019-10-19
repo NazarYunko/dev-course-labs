@@ -35,8 +35,16 @@ def main(url=''):
     return True
 
 
-def home_work():
-    # Ваш захист
+def home_work(time):
+    if "AM" in time:
+        print("Доброго дня!")
+        return True
+    elif "PM" in time:
+        print("Доброго вечора!")
+        return True
+    else:
+        print("Формат часу не правильний!")
+        return False
     pass
 
 

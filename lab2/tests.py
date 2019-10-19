@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- 
 
 import unittest
-from app import main
+from app import *
 
 
 class TestClass(unittest.TestCase):
@@ -10,6 +10,9 @@ class TestClass(unittest.TestCase):
         # Дана функція налаштовує початкові агрументи визначені лише для класу
         self.date_url = 'http://date.jsontest.com/'
         self.ip_url = 'http://ip.jsontest.com/'
+	self.pm_time = '22:22:22 PM'
+	self.am_time = '10:22:12 AM'
+	self.wrong_time = 'asdasdfsdjdskfjijagerfsf'
 
     def test_date_work_successfully(self):
         # Перевіряєм чи функція відправювала до кінця і повернулі True
@@ -25,5 +28,6 @@ class TestClass(unittest.TestCase):
             main(self.ip_url)
 
     def test_home_work(self):
-        # Ваш захист
-        self.assertTrue(True)
+        self.assertTrue(home_work(self.pm_time) == True)
+	self.assertTrue(home_work(self.am_time) == True)
+	self.assertTrue(home_work(self.wrong_time) == False)
