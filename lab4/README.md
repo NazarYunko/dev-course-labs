@@ -10,11 +10,16 @@
 5. Роблю білд імеджа та завантажую його до репозиторію. 
 Для цього вказую правильну назву репозиторію та TAG.
 
-[docker build -t 1995755/nyunko-lab4:django .]
+[docker build -t 1995755/nyunko-lab-4:django .]
 
 [docker images]
 
-[docker push 1995610/nyunko-lab4:django]
+[docker push 1995610/nyunko-lab-4:django]
 
 
-====[Посилання на Docker Hub репозиторій;](https://hub.docker.com/repository/docker/1995755/nyunko-lab4)=====
+====[Посилання на Docker Hub репозиторій;](https://hub.docker.com/repository/docker/1995755/nyunko-lab-4)=====
+
+6. Для запуску веб-сайту потрібно виконати команду: docker run -it --name=django --rm -p 8000:8000 1995755/nyunko-lab-4:django
+
+7. Виконую ті самі дії для створення репозиторію з моніторингом та паралельно з сайтом. Зробив та запустив контейнер з моніторингом та перенаправив логи у server.log
+
