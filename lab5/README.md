@@ -8,7 +8,7 @@
 
 5. Встановлюю redis-сервер, щоб виправити помилки.
 
-![Farmers Market Finder Demo](https://github.com/NazarYunko/dev-course-labs/tree/master/lab5/images/first_run.png)
+![Image](https://github.com/NazarYunko/dev-course-labs/tree/master/lab5/images/first_run.png)
 
 6. Ініціалізовую тести [pipenv run pytest test_app.py --url http://localhost:5000].
 
@@ -16,7 +16,7 @@
 
 8. Запускаю додаток і бачу наступне:
 
-![Farmers Market Finder Demo](https://github.com/NazarYunko/dev-course-labs/tree/master/lab5/images/makefile_run.png)
+![Image](https://github.com/NazarYunko/dev-course-labs/tree/master/lab5/images/makefile_run.png)
 
 Dockerhub: https://hub.docker.com/repository/docker/1995755/nyunko-lab-5 .
 
@@ -28,7 +28,7 @@ Dockerhub: https://hub.docker.com/repository/docker/1995755/nyunko-lab-5 .
 
 12. Перевіряю чи працює сайт.
 
-![Farmers Market Finder Demo](https://github.com/NazarYunko/dev-course-labs/tree/master/lab5/images/docker_compose_run.png)
+![Image](https://github.com/NazarYunko/dev-course-labs/tree/master/lab5/images/docker_compose_run.png)
 
 13. Я віддаю перевагу docker-compose, тому що він більш зручніший і більше зрозуміла стурктура.
 
