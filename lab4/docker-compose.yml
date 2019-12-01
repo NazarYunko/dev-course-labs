@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: 1995755/nyunko-lab-4:compose-app
+    container_name: l4_app
+    ports:
+      - 8000:8000
+  
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.monitoring
+    image: 1995755/nyunko-lab-4:compose-tests
+    container_name: l4_test
+    depends_on:
+      - app
+    network_mode: "host"
