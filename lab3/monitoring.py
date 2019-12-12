@@ -30,9 +30,10 @@ def main(url):
     except Exception as e:
         logging.error("Exception: %s", e)
 
+'''
     while True:
         time.sleep(60)
         run()
-
+'''
 if __name__ == '__main__':
     run() 
